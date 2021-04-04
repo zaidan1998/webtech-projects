@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="homepage.css">
+<body>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="images/pinda.jpg" alt="">
+        </div>
+
+          <div class="nav-area">
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">History</a> </li>
+            <li> <a href="#">Activities</a> </li>
+            <li> <a href="#">Animals</a> </li>
+            <li> <a href="#">Places</a> </li>
+            <li> <a href="#">FAQ</a> </li>
+          </div>
+
+   
+      </div>
+    </header>
+  </body>
+</html>
+
+
+*homepage.css*
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 1170px;
+  margin: auto;
+  position: relative;
+}
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/beach.png);
+  height: 850px;
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center
+  position: relative;
+}
+.nav-area{
+  float: right ;
+  list-style: none;
+  margin-top: 30px;
+  margin-right: -100px;
+}
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: cursive;
+  font-size: 14px;
+}
+.nav-area li a:hover{
+  background: #fff;
+  color: #333;
+}
+.logo img{
+  width: 200px;
+  height: 130px;
+  float: left;
+  opacity: 0.5;
+  margin-left: -90px;
+  border-radius: 30px;
+}
+.logo img:hover{
+  background-color: #3e8e41;
+  opacity: 0.9;
+}
+

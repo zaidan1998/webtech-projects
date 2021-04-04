@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 1170px;
+  margin: auto;
+  position: relative;
+}
+
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(places.jpg);
+  height: 3000px;
+  -webkit-background-size:cover;
+  background-size: cover;
+  background-position: center center
+  position: relative;
+}
+.nav-area{
+  float: right ;
+  list-style: none;
+  margin-top: 30px;
+  margin-right: -100px;
+}
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: cursive;
+  font-size: 14px;
+}
+.nav-area li a:hover{
+  background: #fff;
+  color: #333;
+}
+.logo img{
+  width: 200px;
+  height: 130px;
+  float: left;
+  opacity: 0.5;
+  margin-left: -90px;
+  border-radius: 30px;
+}
+.logo img:hover{
+  background-color: #3e8e41;
+  opacity: 0.9;
+}
