@@ -1,0 +1,47 @@
+<html><head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+getmessage();
+function getmessage(){
+$.get("http://adisazizan.xyz/tutorial/message_list.php",
+function(data,status){
+  var x = '';
+  for (i = 0; i < data.length; i++) {
+    x += "<p>Name:"+ data[i].name +"<br>Message: "  + data[i].message + "</p><br>";
+  }
+    document.getElementById("mymessage").innerHTML = x;
+});
+}
+$(document).ready(function(){
+    $("#send").click(function(){
+
+        $.post("http://adisazizan.xyz/tutorial/message.php",
+        {
+          name: $('#name').val(),
+          message: $('#message').val()
+        },
+        function(data,status){
+            // alert("Data: " + data.status);
+            getmessage();
+        });
+    });
+});
+</script>
+<link rel="stylesheet" href="whatapps.css">
+</head>
+<body>
+<form class="" method="post">
+
+  <label for="">Name: </label>
+  <input type="text" name="name" id="name" value="">
+
+  <label for="">Message: </label>
+  <input type="text" name="message" id="message" value="">
+
+
+</form>
+<button id="send">Send</button>
+<div class="" id="mymessage"></div>
+
+
+</body></html>
